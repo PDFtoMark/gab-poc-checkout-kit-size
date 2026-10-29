@@ -11,9 +11,9 @@ const report = {
   measuredPlatforms: ["web"],
 };
 
-fs.mkdirSync(".report", { recursive: true });
-fs.writeFileSync(".report/report.json", JSON.stringify(report));
+fs.mkdirSync("size-report", { recursive: true });
+fs.writeFileSync("size-report/report.json", JSON.stringify(report));
 fs.writeFileSync(
-  ".report/comment.md",
+  "size-report/comment.md",
   "Web bundle: 74.22 KiB (+5.86 KiB). Above soft budget; acceptance required.\n",
 );
